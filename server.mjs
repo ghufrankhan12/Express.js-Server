@@ -2,7 +2,7 @@
 
 
 import express from 'express'
-import cors from "cors"
+// import cors from "cors"
 import path from 'path'
 const __dirname = path.resolve();
 
