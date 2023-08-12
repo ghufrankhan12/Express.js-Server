@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather app</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>ICC Player Rannking</title>
+     <link rel="stylesheet" href="style.css"> 
+     <link rel="shortcut icon"  type="image" href="73068.jpg">
 </head>
 
-<!DOCTYPE html>
+
 <html>
 
-<head>
-    <title>Weather App</title>
-</head>
+
 
 <body>
     
-    <!-- weather form -->
+    <!-- weather form 
    
     <h1>My Dummy weather app </h1>
 
@@ -32,7 +31,7 @@
         <button type="submit">Get Weather</button>
     </form>
 
-    <div id="result"></div>
+    <div id="result"></div> 
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -63,8 +62,116 @@
 
         }
         
-    </script>
+    </script>  -->
+
+<header class="header">
+    <h1> <img src="73068.jpg" alt="image of ICC" >ICC Player Ranking</h1>
+</header>
+
+
+<div class="form">
+    <form>
+        <label for="formate Player">   Enter Formate of Player  </label>
+        <input type="text" id="Formate_Player" placeholder="Enter Formate like T20 Ranking of Players "
+         > <br>
+         <button type="submit"  onclick="getRanking(event)" > GET Ranking</button>
+    </form>
+
+
+    <table id="resultTable" class="resultTable">
+        <h2 id="resultHeading" ></h2>
+        <th scope="col" class="POS">POS</th>
+        <th scope="col" class="Player">TEAM</th>
+        <th scope="col" class="RATING">RATING</th>
+        <tr>
+            <td class="POS">1.</td>
+            <td class="TEAM" id="POS_1" ></td>
+            <td class="RATING" id="RAT_1" ></td>
+        </tr>
+        <tr>
+            <td class="POS">2.</td>
+            <td class="TEAM" id="POS_2" ></td>
+            <td class="RATING" id="RAT_2" ></td>
+        </tr>
+        <tr>
+            <td class="POS">3.</td>
+            <td class="TEAM" id="POS_3" ></td>
+            <td class="RATING" id="RAT_3" ></td>
+        </tr>
+        <tr>
+            <td class="POS">4.</td>
+            <td class="TEAM" id="POS_4" ></td>
+            <td class="RATING" id="RAT_4" ></td>
+        </tr>
+        <tr>
+            <td class="POS">5.</td>
+            <td class="TEAM" id="POS_5" ></td>
+            <td class="RATING" id="RAT_5" ></td>
+        </tr>
+        <tr>
+            <td class="POS">6.</td>
+            <td class="TEAM" id="POS_6" ></td>
+            <td class="RATING" id="RAT_6" ></td>
+        </tr>
+        <tr>
+            <td class="POS">7.</td>
+            <td class="TEAM" id="POS_7" ></td>
+            <td class="RATING" id="RAT_7" ></td>
+        </tr>
+        <tr>
+            <td class="POS">8.</td>
+            <td class="TEAM" id="POS_8" ></td>
+            <td class="RATING" id="RAT_8" ></td>
+        </tr>
+        <tr>
+            <td class="POS">9.</td>
+            <td class="TEAM" id="POS_9" ></td>
+            <td class="RATING" id="RAT_9" ></td>
+        </tr>
+        <tr>
+            <td class="POS">10.</td>
+            <td class="TEAM" id="POS_10" ></td>
+            <td class="RATING" id="RAT_10" ></td>
+        </tr>
+    </table>
+
+</div>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="ranking.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 
 </html>
 
